@@ -2,23 +2,17 @@ package school.mjc.stage0.conditions.task5;
 
 public class LeapYearPrinter {
     public void isLeapYear(int year) {
-        boolean isLeap = false;
+        String isLeap = "not leap";
 
         if (year % 4 == 0) {
             if (year % 100 == 0) {
                 if (year % 400 == 0) {
-                    isLeap = true;
+                    isLeap = "leap";
                 }
             } else {
-                isLeap = true;
+                isLeap = "leap";
             }
         }
-
-        if (isLeap) {
-            System.out.println(year + " is a leap year.");
-        } else {
-            System.out.println(year + " is not a leap year.");
-        }
-
+        System.out.println(isLeap);
     }
 }
